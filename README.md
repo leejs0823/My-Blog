@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Blog
 
-## Getting Started
+## Commit Message Convention
 
-First, run the development server:
+### 커밋 유형 지정
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+커밋 유형은 영어로 작성한 후 `:` 로 제목과 분리
+| 커밋 유형 | 의미 |
+| ---------------- | ------------------------------------------------------------ |
+| feat | 새로운 기능 추가 |
+| fix | 버그 수정 |
+| mod | 코드 구조 개선 & 크지 않은 수정 |
+| style | 코드 formatting, 세미콜론 누락, 코드 자체의 변경이 없는 경우 |
+| design | 사용자 UI 디자인 변경 |
+| comment | 필요한 주석 추가 및 변경 |
+| docs | 문서 수정 ex) README |
+| refactor | 코드 리팩토링 |
+| chore | pubspec 등 시스템 파일 수정 ex) .gitignore |
+| test | 테스트 코드, 리팩토링 테스트 코드 추가 |
+| rename | 파일 또는 폴더 명을 수정하거나 옮기는 작업만인 경우 |
+| remove | 파일을 삭제하는 작업만 수행한 경우 |
+| !BREAKING CHANGE | 커다란 API 변경의 경우 |
+| !HOTFIX | 급하게 치명적인 버그를 고쳐야 하는 경우 |
+
+### 마침표는 사용하지 않음
+
+### 한 커밋에는 한 가지 문제만
+
+추적 가능하게 유지해주기.
+너무 많은 문제를 한 커밋에 담으면 추적하기 어려움.
+
+## Branch Convention
+
+### 브랜치 유형 지정
+
+브랜치명은 어떤 작업인지 한 단어로 작성하고 `/` 로 제목과 분리
+| 브랜치 유형 | 의미 |
+| ---------------- | ------------------------------------------------------------ |
+| main | 서비스 중 코드 |
+| develop | 최종 개발 브랜치 |
+| feature | 기능 개발 |
+| hotfix | 버그 수정 |
+| refactor | 리팩토링 |
+| infra | 인프라 관련 |
+
+### 바람직한 브랜치 명
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+feature/login
+```
