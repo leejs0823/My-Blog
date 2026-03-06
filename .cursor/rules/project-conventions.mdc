@@ -1,0 +1,26 @@
+---
+description: my-blog 프로젝트 구조 및 컨벤션
+alwaysApply: true
+---
+
+# Project Conventions
+
+## Structure
+
+- `src/app/`: Next.js App Router
+- `src/components/`: common, layout, ui
+- `src/styles/`: tokens, GlobalStyles, EmotionRegistry
+- `src/lib/notion/`: Notion API
+
+## Path Alias
+
+- `@/*` → `./src/*`
+
+## Component Pattern
+
+- `[Name].tsx` + `[Name].styled.ts` + `index.ts`
+- styled 파일 상단에 `"use client"` (Emotion)
+
+## Formatting
+
+- Prettier: semi, double quote, 2 spaces, trailingComma es5, printWidth 80
