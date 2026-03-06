@@ -2,8 +2,8 @@
  * 폰트 디자인 토큰
  */
 export const fontFamily = {
-  sans: "var(--font-geist-sans), system-ui, sans-serif",
-  mono: "var(--font-geist-mono), monospace",
+  sans: "var(--font-geist-sans, ui-sans-serif, system-ui, sans-serif)",
+  mono: "var(--font-geist-mono, ui-monospace, monospace)",
 } as const;
 
 export const fontSize = {

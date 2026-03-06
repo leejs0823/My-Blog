@@ -7,8 +7,6 @@ const globalStyles = css`
   :root {
     --background: ${theme.colors.semantic.background};
     --foreground: ${theme.colors.semantic.foreground};
-    --font-geist-sans: inherit;
-    --font-geist-mono: inherit;
   }
 
   *,
