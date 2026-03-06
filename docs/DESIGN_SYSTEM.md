@@ -6,9 +6,8 @@
 
 1. [스타일링 전략](#1-스타일링-전략)
 2. [디자인 토큰](#2-디자인-토큰)
-3. [공통 UI 컴포넌트](#3-공통-ui-컴포넌트)
-4. [반응형 설계](#4-반응형-설계)
-5. [접근성](#5-접근성)
+3. [반응형 설계](#3-반응형-설계)
+4. [접근성](#4-접근성)
 
 ---
 
@@ -39,6 +38,11 @@ src/styles/
 - `[Name].tsx`: 로직 및 JSX
 - `[Name].styled.ts`: Emotion styled 컴포넌트
 - `index.ts`: export
+
+### styled import 규칙
+
+- `.styled.ts` 파일 import 시 `import * as S from "./X.styled"` 사용
+- JSX에서 `S.ComponentName`으로 참조 (예: `<S.PageWrapper>`, `<S.PageTitle>`)
 
 ---
 

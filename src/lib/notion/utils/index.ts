@@ -1,1 +1,1 @@
-export { extractText } from "./notionExtract";
+export * from "./notionExtract";

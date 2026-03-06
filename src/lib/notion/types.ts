@@ -1,9 +1,10 @@
 /**
  * Notion API 연동 타입
- * @see https://developers.notion.com/reference
  */
 
-/** 블로그 포스트 변환 후 타입 */
+/** 블로그 포스트 변환 후 타입
+ * TODO: 타입 수정 필요
+ */
 export interface NotionPost {
   id: string;
   title: string;
@@ -14,7 +15,9 @@ export interface NotionPost {
   cover?: string;
 }
 
-/** Notion Database 페이지 raw 타입 (properties 구조) */
+/** Notion Database 페이지 raw 타입
+ * TODO: 타입 수정 필요
+ */
 export interface NotionDatabasePage {
   id: string;
   created_time?: string;

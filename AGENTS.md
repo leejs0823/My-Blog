@@ -19,8 +19,7 @@ src/
 ├── app/              # App Router 페이지
 ├── components/
 │   ├── common/       # Header, Footer, SkipLink
-│   ├── layout/       # MainLayout, PageContent
-│   └── ui/           # Button, Card, Tag
+│   └── layout/       # MainLayout, PageContent
 ├── styles/           # tokens, GlobalStyles, EmotionRegistry
 ├── lib/
 │   ├── utils.ts
@@ -52,6 +51,7 @@ src/
 
 - styled 컴포넌트는 DOM에 전달되지 않는 props에 `$` prefix 사용 (예: `$variant`)
 - Next.js Link와 함께 사용 시 `as={Link}` 대신 `<Link><Styled as="span" /></Link>` 패턴
+- **styled import**: `.styled.ts` 파일 import 시 `import * as S from "./X.styled"` 사용, JSX에서 `S.ComponentName`으로 참조
 
 ### 디자인 토큰
 

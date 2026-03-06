@@ -1,9 +1,9 @@
-import { StyledFooter } from "./Footer.styled";
+import * as S from "./Footer.styled";
 
 export function Footer() {
   return (
-    <StyledFooter>
+    <S.StyledFooter>
       <p>© {new Date().getFullYear()} My Blog. All rights reserved.</p>
-    </StyledFooter>
+    </S.StyledFooter>
   );
 }

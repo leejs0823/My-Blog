@@ -1,7 +1,7 @@
 import { Header } from "@/components/common/Header";
 import { Footer } from "@/components/common/Footer";
 import { SkipLink } from "@/components/common/SkipLink";
-import { Wrapper, Main } from "./MainLayout.styled";
+import * as S from "./MainLayout.styled";
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -9,13 +9,13 @@ interface MainLayoutProps {
 
 export function MainLayout({ children }: MainLayoutProps) {
   return (
-    <Wrapper>
+    <S.Wrapper>
       <SkipLink />
       <Header />
-      <Main id="main-content" tabIndex={-1}>
+      <S.Main id="main-content" tabIndex={-1}>
         {children}
-      </Main>
+      </S.Main>
       <Footer />
-    </Wrapper>
+    </S.Wrapper>
   );
 }

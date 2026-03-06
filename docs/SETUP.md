@@ -131,18 +131,19 @@ pre-commit:
 
 ### MainLayout
 
-- `Header` (Home, Blog, About 링크)
+- `Header` (Main, About, Blog, Project 링크)
 - `main` (children)
 - `Footer`
 
 ### 페이지 구성
 
-| 경로           | 설명                                          |
-| -------------- | --------------------------------------------- |
-| `/`            | 홈 (Landing)                                  |
-| `/blog`        | 블로그 목록 (Notion 연동 후 실제 데이터 표시) |
-| `/blog/[slug]` | 포스트 상세                                   |
-| `/about`       | 소개                                          |
+| 경로           | 설명                    |
+| -------------- | ----------------------- |
+| `/`            | Main (첫 애니메이션)    |
+| `/about`       | About (포트폴리오)      |
+| `/blog`        | Blog                    |
+| `/blog/[slug]` | 포스트 상세             |
+| `/project`     | Project                 |
 
 ---
 

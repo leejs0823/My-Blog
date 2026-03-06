@@ -1,14 +1,15 @@
 import Link from "next/link";
-import { StyledHeader, Nav } from "./Header.styled";
+import * as S from "./Header.styled";
 
 export function Header() {
   return (
-    <StyledHeader>
-      <Nav>
-        <Link href="/">Home</Link>
-        <Link href="/blog">Blog</Link>
+    <S.StyledHeader>
+      <S.Nav>
+        <Link href="/">Main</Link>
         <Link href="/about">About</Link>
-      </Nav>
-    </StyledHeader>
+        <Link href="/blog">Blog</Link>
+        <Link href="/project">Project</Link>
+      </S.Nav>
+    </S.StyledHeader>
   );
 }

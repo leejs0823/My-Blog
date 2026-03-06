@@ -70,36 +70,3 @@ export const List = styled.ul`
     opacity: 0.7;
   }
 `;
-
-export const Article = styled.article`
-  max-width: 720px;
-  margin: 0 auto;
-`;
-
-export const BackLink = styled.a`
-  display: inline-block;
-  margin-bottom: 1.5rem;
-  font-size: ${theme.fonts.size.sm};
-  opacity: 0.8;
-  transition: opacity 0.2s;
-
-  &:hover {
-    opacity: 1;
-  }
-`;
-
-export const ArticleDate = styled.p`
-  font-size: ${theme.fonts.size.sm};
-  color: var(--foreground);
-  opacity: 0.6;
-  margin-bottom: 2rem;
-`;
-
-export const ArticleContent = styled.div`
-  line-height: ${theme.fonts.lineHeight.relaxed};
-  color: var(--foreground);
-
-  p {
-    margin-bottom: 1rem;
-  }
-`;

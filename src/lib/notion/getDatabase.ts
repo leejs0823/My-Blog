@@ -5,11 +5,14 @@ import { notionClient, NOTION_DATABASE_ID } from "./instance";
 import { parseNotionError } from "./error";
 
 /**
- * Notion Database 쿼리 (캐시 없음)
+ * Notion Database 쿼리
  */
 type NotionSort =
   | { property: string; direction: "ascending" | "descending" }
-  | { timestamp: "created_time" | "last_edited_time"; direction: "ascending" | "descending" };
+  | {
+      timestamp: "created_time" | "last_edited_time";
+      direction: "ascending" | "descending";
+    };
 
 async function queryNotionDatabase<T>(
   client: Client,
@@ -28,8 +31,7 @@ async function queryNotionDatabase<T>(
 }
 
 /**
- * Notion Database 조회 (캐시 적용)
- * snu-design-week-2025 패턴 참고
+ * Notion Database 조회
  */
 export const getNotionDatabase = cache(
   async <T>(
