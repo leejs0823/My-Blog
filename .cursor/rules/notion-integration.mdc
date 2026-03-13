@@ -1,0 +1,25 @@
+---
+description: Notion API 연동 패턴
+globs: "src/lib/notion/**"
+alwaysApply: false
+---
+
+# Notion Integration
+
+## Structure
+
+- `instance.ts`: Client, NOTION_DATABASE_ID
+- `getDatabase.ts`: getNotionDatabase (cache + unstable_cache)
+- `error.ts`: parseNotionError, ClientError, ServerError
+- `utils/notionExtract.ts`: extractText
+- `posts.ts`: fetchPosts, fetchPostBySlug
+
+## extractText
+
+- title, rich_text, date 타입 지원
+- properties에서 plain_text 추출
+
+## Database Query
+
+- sorts: `{ timestamp: "created_time", direction: "descending" }` 또는 `{ property, direction }`
+- getNotionDatabase는 databaseId 없으면 `[]` 반환

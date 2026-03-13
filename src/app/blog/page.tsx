@@ -1,9 +1,9 @@
 import * as S from "@/components/layout/PageContent";
 
-export default function MainPage() {
+export default function BlogPage() {
   return (
     <S.PageWrapper>
-      <S.PageTitle>Main</S.PageTitle>
+      <S.PageTitle>Blog</S.PageTitle>
     </S.PageWrapper>
   );
 }

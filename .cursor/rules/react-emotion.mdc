@@ -1,0 +1,43 @@
+---
+description: React 및 Emotion 스타일링 패턴
+globs: "**/*.tsx,**/*.styled.ts"
+alwaysApply: false
+---
+
+# React & Emotion Patterns
+
+## Styled Components
+
+- `@emotion/styled` 사용
+- DOM에 전달되지 않는 props는 `$` prefix (예: `$variant`, `$fullWidth`)
+- styled 파일 상단에 `"use client"` 필수
+
+## Link + Styled
+
+Next.js Link와 styled 컴포넌트 조합 시:
+
+```tsx
+// ✅ GOOD
+<Link href="/path">
+  <StyledLink as="span">텍스트</StyledLink>
+</Link>
+
+// ❌ BAD - 함수 전달 에러
+<StyledLink as={Link} href="/path">텍스트</StyledLink>
+```
+
+## Design Tokens
+
+```tsx
+import { theme } from "@/styles/tokens";
+
+font-size: ${theme.fonts.size.lg};
+color: ${theme.colors.brand.primary};
+${theme.mediaQuery.tablet} { padding: 2rem; }
+```
+
+## Breakpoints
+
+- `theme.mediaQuery.tablet` (768px)
+- `theme.mediaQuery.desktop` (1024px)
+- mobile-first

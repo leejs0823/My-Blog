@@ -1,0 +1,26 @@
+---
+description: TypeScript 및 포맷 규칙
+globs: "**/*.ts,**/*.tsx"
+alwaysApply: false
+---
+
+# TypeScript & Formatting
+
+## Prettier
+
+- semi: true
+- singleQuote: false
+- tabWidth: 2
+- trailingComma: es5
+- printWidth: 80
+
+## Naming
+
+- PascalCase: 컴포넌트, 타입
+- camelCase: 함수, 변수
+- kebab-case: 파일명(선택), assets
+
+## Exports
+
+- 컴포넌트: `index.ts`에서 re-export
+- 타입: `export type` 사용
